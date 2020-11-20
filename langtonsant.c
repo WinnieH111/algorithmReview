@@ -18,7 +18,6 @@
 // Use the structure to store ant's status. Its location and facing
 // Use structure to define the ant's status is similar to the OOP (Objective Oriented Programming, e.g. C++, Java, etc.)
 // You can call either the instance or the pointer of the structure.
-// We can discuss in our next meeting.
 typedef struct AntState {
     char facing;
     int x;
@@ -36,7 +35,6 @@ char r2() {
 }
 
 // Create the board. Only need to be called at the beginning of the main func
-// Just like the code we wrote in our last meeting
 void initBoard(char board[HEIGHT][LENGTH]) {
     // All the cells are black on the board now.
     // Consider to use random.
@@ -50,7 +48,6 @@ void initBoard(char board[HEIGHT][LENGTH]) {
 }
 
 // Printout the board, called after each iteration
-// Just like the code we wrote in our last meeting (similar to initBoard())
 void printBoard(char board[HEIGHT][LENGTH]) {
     printf("=====START=====\n");
     for (int i=0; i < HEIGHT; i++) {
@@ -65,7 +62,6 @@ void printBoard(char board[HEIGHT][LENGTH]) {
 // Ant move on the board.
 // Ant turns and moves
 // Cell's color flip
-// Just like conditions we wrote in last meeting
 void moveOnBoard(char board[HEIGHT][LENGTH], Ant* ant) {
     // If the cell is white...
     if (board[ant->x][ant->y] == '#') {
